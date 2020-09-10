@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#top-strip {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    background-image: url("/images/stars.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#top-strip p {
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#top-strip-author {
+    color: rgb(23, 237, 18); 
+    text-decoration: none;
+}
+
