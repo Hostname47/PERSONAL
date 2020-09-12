@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) {
+
+    #search-button {
+        background-image: url("/images/buttons-icons/search.png");
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
+    #nav-button {
+        background-image: url("/images/buttons-icons/list.png");
+        margin: 16px;
+    }
+
+    #search-button, #nav-button {
+        height: 22px;
+        width: 22px;
+        background-size: 25px 25px;
+        background-repeat: no-repeat;
+    }
+
+    #mobile-logo {
+        font-family: 'Changa', sans-serif;
+        font-size: 24px;
+        text-decoration: none;
+        color: white;
+        
+    }
+}

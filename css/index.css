@@ -10,6 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 5px;
+    border-bottom: 1px solid gray;
 
     background-image: url("/images/stars.png");
     background-position: center;
@@ -23,7 +24,14 @@ body {
 }
 
 #top-strip-author {
-    color: rgb(23, 237, 18); 
+    color: rgb(23, 237, 18);
     text-decoration: none;
+}
+
+#nav-container {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
 }
 
