@@ -1,5 +1,6 @@
-@media screen and (max-width: 600px) {
 
+
+@media screen and (max-width: 600px) {
     #search-button {
         background-image: url("/images/buttons-icons/search.png");
         margin-left: auto;
@@ -14,7 +15,7 @@
     #search-button, #nav-button {
         height: 22px;
         width: 22px;
-        background-size: 25px 25px;
+        background-size: 23px 23px;
         background-repeat: no-repeat;
     }
 
@@ -23,6 +24,83 @@
         font-size: 24px;
         text-decoration: none;
         color: white;
-        
+    }
+
+    #mobile-nav {
+        background-color: black;
+        /* -- HERE display cannot be animated so we have to use visibility along with opacity to get the job done :)
+                The top visibility and opacity didn't work properly so i used max-height to solve it
+        display: none;
+        transition: display 0.5s, opacity 0.5s linear;
+        */
+
+        max-height: 0;
+        transition: max-height 0.5s ease-in;
+        overflow: hidden;
+    }
+
+    #mobile-nav ul {
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #mobile-nav ul a{
+        text-decoration: none;
+    }
+
+    #mobile-nav ul li {
+        font-weight: bold;
+        padding: 20px;
+        padding-left: 30px;
+        margin-left: 12px;
+        color: white;
+    }
+
+    #mob-home {
+        background-image: url("/images/buttons-icons/home.png");
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: 0 center;
+    }
+
+    #search-area {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        background-color: black;
+        box-sizing: border-box;
+    }
+
+    #search-area form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #search-area #search-field {
+        padding: 8px;
+        padding-left: 34px;
+        width: 65%;
+        background-image: url("/images/buttons-icons/search-field-background-icon.png");
+        background-size: 18px 18px;
+        background-repeat: no-repeat;
+        background-position: 8px center;
+        border: 2px solid gray;
+        margin: 0;
+
+    }
+
+    #search-area #search-field:focus {
+        border-color: rgb(30, 211, 54);
+    }
+    #search-area #search-OK {
+        width: 17%;
+        height: 36px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        color: black;
+        background: linear-gradient(38deg, rgba(61,227,83,1) 35%, rgba(0,175,27,1) 100%);
     }
 }

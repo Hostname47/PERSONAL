@@ -7,11 +7,12 @@ body {
 #top-strip {
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 5px;
     border-bottom: 1px solid gray;
-
+    
     background-image: url("/images/stars.png");
     background-position: center;
     background-size: cover;
@@ -28,7 +29,8 @@ body {
     text-decoration: none;
 }
 
-#nav-container {
+#controlls-container {
+    width: 100%;
     height: 60px;
     background-color: black;
     display: flex;
